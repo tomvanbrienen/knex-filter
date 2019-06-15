@@ -5,13 +5,13 @@ Declarative filter query builder for `knex.js`. This module has been inspired by
 ## Installation
 
 ```bash
-npm i knex-filter-loopback --save
+npm i knex-query-builder --save
 ```
 
 ## Usage
 
 ```js
-var whereFilter = require('knex-filter-loopback').whereFilter;
+var whereFilter = require('knex-query-builder').whereFilter;
 
 knex('tablename')
 	.where(whereFilter({
