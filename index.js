@@ -16,7 +16,7 @@ function registerHandler (op, handler, overwrite) {
   handlers[op] = handler;
 }
 
-var fieldlessCommands = ['and', 'or', 'not', '!', 'related'];
+var fieldlessCommands = ['and', 'or', 'not', '!'];
 
 var handlers = {
   '='      : eqHandler,
@@ -35,8 +35,7 @@ var handlers = {
   '!'      : notHandler,
   'not'    : notHandler,
   'and'    : _.partial(logicalHandler, 'where'),
-  'or'     : _.partial(logicalHandler, 'orWhere'),
-  'related' : relationHandler
+  'or'     : _.partial(logicalHandler, 'orWhere')
 };
 
 function eqHandler (field, arg) {
@@ -60,17 +59,6 @@ function arrayArgHandler (op, field, arg) {
 
 function notHandler (field, arg) {
   this.whereNot(whereFilter(arg));
-}
-
-function relationHandler (field, arg) {
-  if (typeof this.whereHas === 'undefined') {
-    throw new TypeError('whereHas function is not available, you should use bookshelf-eloquent plugin.');
-  }
-  _.each(arg, function(filter, relation) {
-    this.whereHas(relation, function(query) {
-      query.where(whereFilter(filter));
-    });
-  }, this);
 }
 
 function logicalHandler (op, field, arg) {
