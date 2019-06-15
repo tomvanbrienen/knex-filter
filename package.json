@@ -1,7 +1,7 @@
 {
-  "name": "knex-filter-loopback",
-  "version": "0.2.0",
-  "description": "Declarative filtering for knex.js based on the Loopback Where Filter.",
+  "name": "knex-query-builder",
+  "version": "1.0.0",
+  "description": "Declarative filter query builder for knex.js.",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -21,20 +21,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joostvunderink/knex-filter-loopback.git"
+    "url": "git+https://github.com/tomvanbrienen/knex-query-builder.git"
   },
   "keywords": [
     "knex",
     "filter",
     "declarative",
-    "query"
+    "query",
+    "builder"
   ],
-  "author": "Joost Vunderink",
+  "author": "Tom van Brienen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joostvunderink/knex-filter-loopback/issues"
+    "url": "https://github.com/tomvanbrienen/knex-query-builder/issues"
   },
-  "homepage": "https://github.com/joostvunderink/knex-filter-loopback#readme",
+  "homepage": "https://github.com/tomvanbrienen/knex-query-builder#readme",
   "engines": {
     "node": ">=4.0.0"
   }

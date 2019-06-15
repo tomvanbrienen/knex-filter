@@ -1,10 +1,6 @@
 # knex-filter-loopback
 
-Declarative filtering for `knex.js` based on the [Loopback Where Filter](https://loopback.io/doc/en/lb3/Where-filter.html). This module has been inspired by and based on [Constantin Titarenko's knex filter module](https://github.com/titarenko/knex-filter).
-
-[![Build Status](https://secure.travis-ci.org/joostvunderink/knex-filter-loopback.png?branch=master)](https://travis-ci.org/joostvunderink/knex-filter-loopback) [![Coverage Status](https://coveralls.io/repos/joostvunderink/knex-filter-loopback/badge.png)](https://coveralls.io/r/joostvunderink/knex-filter-loopback)
-
-[![NPM](https://nodei.co/npm/knex-filter-loopback.png?downloads=true&stars=true)](https://nodei.co/npm/knex-filter-loopback/)
+Declarative filter query builder for `knex.js`. This module has been inspired by and based on [Joost Vunderink's knex filter loopback](https://github.com/joostvunderink/knex-filter-loopback).
 
 ## Installation
 
